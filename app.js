@@ -4,22 +4,22 @@ function Cliente(
   email,
   cpf,
   telefone,
-  cidade,
   cep,
   logradouro,
   numero,
   bairro,
+  cidade,
   estado
 ) {
   this.nome = nome;
   this.email = email;
   this.cpf = cpf;
   this.telefone = telefone;
-  this.cidade = cidade;
   this.cep = cep;
   this.logradouro = logradouro;
   this.numero = numero;
   this.bairro = bairro;
+  this.cidade = cidade;
   this.estado = estado;
 }
 
@@ -40,11 +40,11 @@ UI.prototype.addClientes = function (cliente) {
     <td>${cliente.email}</td>
     <td>${cliente.cpf}</td>
     <td>${cliente.telefone}</td>
-    <td>${cliente.cidade}</td>
     <td>${cliente.cep}</td>
     <td>${cliente.logradouro}</td>
     <td>${cliente.numero}</td>
     <td>${cliente.bairro}</td>
+    <td>${cliente.cidade}</td>
     <td>${cliente.estado}</td>
     <td><a href="#" class="delete"</a>X</td>
     `;
@@ -58,10 +58,10 @@ UI.prototype.cleanTela = function() {
     document.querySelector("#cpfCliente").value = ''
     document.querySelector("#telefoneCliente").value = ''
     document.querySelector("#cidadeCliente").value = ''
-    document.querySelector("#cepCliente").value = ''
     document.querySelector("#logradouroCliente").value = ''
     document.querySelector("#numeroCliente").value = ''
     document.querySelector("#bairroCliente").value = ''
+    document.querySelector("#cidadeCliente").value = ''
     document.querySelector("#estadoCliente").value = ''
 }
 
@@ -79,11 +79,11 @@ document.querySelector(".form-cliente").addEventListener("submit", (e) => {
     email = document.querySelector("#emailCliente").value,
     cpf = document.querySelector("#cpfCliente").value,
     telefone = document.querySelector("#telefoneCliente").value,
-    cidade = document.querySelector("#cidadeCliente").value,
     cep = document.querySelector("#cepCliente").value,
     logradouro = document.querySelector("#logradouroCliente").value,
     numero = document.querySelector("#numeroCliente").value,
     bairro = document.querySelector("#bairroCliente").value,
+    cidade = document.querySelector("#cidadeCliente").value,
     estado = document.querySelector("#estadoCliente").value;
 
   // Instanciando objeto
