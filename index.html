@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,10 +15,10 @@
   </head>
   <body>
     <div class="container row">
-      <h1>Formulário de Cadastro Cliente</h1>
+      <h1>Formulário de Cadastro de clientes</h1>
       <form class="form-cliente">
         <div class="row">
-          <div class="six columns">
+          <class class="six columns">
             <label for="nome">Nome do Cliente:</label>
             <input
               class="u-full-width"
@@ -47,21 +47,23 @@
               placeholder="telefone.."
               id="telefoneCliente"
             />
-            <label for="cidade">Cidade:</label>
+            <!-- Aqui vai a cidade-->
+            <label for="cidade">Cep:</label>
             <input
               class="u-full-width"
               type="text"
               placeholder="sua cidade.."
-              id="cidadeCliente"
+              id="cepCliente"
             />
-          </div>
+            
+          </class>
           <div class="six columns">
-            <label for="cep">CEP:</label>
+            <label for="cep">Cidade:</label>
             <input
               class="u-full-width"
               type="text"
               placeholder="cep.."
-              id="cepCliente"
+              id="cidadeCliente"
             />
             <label for="logradouro">Logradouro:</label>
             <input
@@ -70,20 +72,24 @@
               placeholder="logradouro.."
               id="logradouroCliente"
             />
-            <label for="numero">Número:</label>
-            <input
-              class="u-full-width"
-              type="number"
-              placeholder="numero"
-              id="numeroCliente"
-            />
-            <label for="bairro">Bairro:</label>
+            <!-- Aqui está o Bairro-->
+            <label for="bairro">Número:</label>
             <input
               class="u-full-width"
               type="text"
-              placeholder="seu bairro.."
+              placeholder="seu numero.."
+              id="numeroCliente"
+            />
+            
+            <label for="numero">Bairro:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="bairro"
               id="bairroCliente"
             />
+            
+            
             <label for="estado">Estado:</label>
             <input
               class="u-full-width"
@@ -103,11 +109,11 @@
             <td>Email:</td>
             <td>CPF/CNPJ:</td>
             <td>Telefone:</td>
-            <td>CEP:</td>
+            <td>Cidade:</td>
+            <td>Cep:</td>
             <td>Logradouro:</td>
             <td>Número:</td>
             <td>Bairro:</td>
-            <td>Cidade:</td>
             <td>Estado:</td>
           </tr>
         </thead>
