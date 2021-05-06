@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Formulário de Cadastro de clientes</title>
+  </head>
+  <body>
+    <div class="container row">
+      <h1>Formulário de Cadastro Cliente</h1>
+      <form class="form-cliente">
+        <div class="row">
+          <div class="six columns">
+            <label for="nome">Nome do Cliente:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="nome.."
+              id="nomeCliente"
+            />
+            <label for="email">Email:</label>
+            <input
+              class="u-full-width"
+              type="email"
+              placeholder="email.."
+              id="emailCliente"
+            />
+            <label for="email">CPF ou CNPJ</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="cpf.."
+              id="cpfCliente"
+            />
+            <label for="email">Telefone:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="telefone.."
+              id="telefoneCliente"
+            />
+            <label for="cidade">Cidade:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="sua cidade.."
+              id="cidadeCliente"
+            />
+          </div>
+          <div class="six columns">
+            <label for="cep">CEP:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="cep.."
+              id="cepCliente"
+            />
+            <label for="logradouro">Logradouro:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="logradouro.."
+              id="logradouroCliente"
+            />
+            <label for="numero">Número:</label>
+            <input
+              class="u-full-width"
+              type="number"
+              placeholder="numero"
+              id="numeroCliente"
+            />
+            <label for="bairro">Bairro:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="seu bairro.."
+              id="bairroCliente"
+            />
+            <label for="estado">Estado:</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="seu estado.."
+              id="estadoCliente"
+            />
+          </div>
+        </div>
+        <input class="button-primary" type="submit" value="Cadastrar" />
+      </form>
+      <hr />
+      <table class="u-full-width table-one">
+        <thead>
+          <tr>
+            <td>Nome:</td>
+            <td>Email:</td>
+            <td>CPF/CNPJ:</td>
+            <td>Telefone:</td>
+            <td>CEP:</td>
+            <td>Logradouro:</td>
+            <td>Número:</td>
+            <td>Bairro:</td>
+            <td>Cidade:</td>
+            <td>Estado:</td>
+          </tr>
+        </thead>
+        <tbody id="cliente-setup"></tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
